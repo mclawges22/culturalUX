@@ -1,0 +1,82 @@
+/***Main CSS for a research study on culture-centered User Experience design
+ ***     By Maegan Clawges     ***
+ ***     I am open to advice and help resolving open issues, but please do not replicate on your own public web domain ***/
+
+@font-face{
+	font-family:Myriad-Pro-Light;
+	src:url('../fonts/MyriadPro-Light.otf');
+}
+@font-face{
+	font-family:Myriad-Pro;
+	src:url('../fonts/MyriadPro-Regular.otf');
+}
+@font-face{
+	font-family:Myriad-Pro-Bold;
+	src:url('../fonts/MyriadPro-Bold.otf');
+}
+
+
+html, body, h1, h2, h3, h4, h5, h6, p, border{
+    margin:0;
+    padding:0;
+}
+
+html{
+    background-color:#000;
+}
+
+body{
+    height:100%;
+    width: 100%;
+    font-family:Myriad-Pro, Arial, sans-serif;
+    font-size:14px;
+    color:#333333;
+    line-height:25px;
+    background-color:#000;
+}
+a:link {
+    text-decoration: none;
+    color:#818181;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:50px 0;
+   
+}
+ul li {
+    text-align: center;
+    width:16.5%;
+    height:47px;
+    padding:10px 1.6%;
+    border-left:1px solid #818181;
+    font-size:1.6em;
+    float:left;
+    color:#818181;
+}
+ul a:nth-child(4) li, ul a:nth-child(5) li {
+    padding-top:20px;
+}
+ul a:nth-child(1) li, ul a:nth-child(2) li, ul a:nth-child(3) li {
+    padding-bottom:20px;
+}
+
+ul a:last-child li {
+    border:1px solid #818181;
+    border-bottom:none;
+    border-top:none;
+}
+ul li:hover {
+    background-color:#ffc990;
+    color:#000;
+}
+
+
+ul #case a {
+    font-size:.8em;
+}
+ul #case a:hover {
+    color:#6f8330;
+}

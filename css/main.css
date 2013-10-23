@@ -1,0 +1,182 @@
+/***Main CSS for a research study on culture-centered User Experience design
+ ***     By Maegan Clawges     ***
+ ***     I am open to advice and help resolving open issues, but please do not replicate on your own public web domain ***/
+
+@font-face{
+	font-family:Myriad-Pro-Light;
+	src:url('../fonts/MyriadPro-Light.otf');
+}
+@font-face{
+	font-family:Myriad-Pro;
+	src:url('../fonts/MyriadPro-Regular.otf');
+}
+@font-face{
+	font-family:Myriad-Pro-Bold;
+	src:url('../fonts/MyriadPro-Bold.otf');
+}
+
+
+html, body, h1, h2, h3, h4, h5, h6, p, border{
+    margin:0;
+    padding:0;
+}
+
+html{
+    background-color:#000;
+}
+
+body{
+    height:100%;
+    width: 100%;
+    font-family:Myriad-Pro, Arial, sans-serif;
+    font-size:14px;
+    color:#333333;
+    line-height:25px;
+    background-color:#000;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color:#919191;
+}
+.right {
+    margin-top:20px;
+    margin-left:58%;
+    margin-right:5%;
+    color: #ffc990;
+    font-size:1.1em;
+}
+.right a:link, .right a:visited {
+    
+    font-size:1.2em;
+    color: #ffc990;
+}
+.right a:hover {
+    color:#a1a1a1;
+}
+
+#landing {
+    width:100%;
+    height:660px;
+    font-family:Myriad-Pro-Light, Arial, sans-serif;
+    background: url(../images/world-portrait.png) no-repeat;
+    background-size:100%;
+    background-position: top right;
+}
+
+#landing .title{
+    color:#6f8330;
+    font-size:4.4em;
+}
+#landing .a {
+    padding:300px 20px 20px 30px;
+}
+#landing .b {
+    padding:20px 30px;
+}
+#landing .c {
+    padding:20px 30px;
+}
+#landing #subtitle {
+    color: #ffc990;
+    font-size:1.5em;
+    padding-left:30px;
+    margin-top:30px;
+    line-height:1.3em;
+}
+.intro {
+    margin:0 15%;
+    font-size: 1.3em;
+    color:#666;
+}
+.intro p{
+    margin:15px 0;
+}
+#thesis {
+    color:#919191;
+    margin-top:50px;
+    font-size:1.1em;
+    font-family:Myriad-Pro-Bold, Arial, sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin:0 7%;
+    padding:50px 0;
+   
+}
+ul li {
+    text-align: center;
+    width:16.5%;
+    height:47px;
+    padding:10px 1.6%;
+    border-left:1px solid #666;
+    font-size:1.6em;
+    float:left;
+    color:#919191;
+}
+ul a:nth-child(4) li, ul a:nth-child(5) li {
+    padding-top:20px;
+}
+ul a:nth-child(1) li, ul a:nth-child(2) li, ul a:nth-child(3) li {
+    padding-bottom:20px;
+}
+
+ul a:last-child li {
+    border:1px solid #666;
+    border-bottom:none;
+    border-top:none;
+}
+ul li:hover {
+    background-color:#ffc990;
+    color:#000;
+}
+
+@media screen and (min-width: 1170px) {
+    #landing .title, #landing #subtitle {
+        padding-left:10%;
+    }
+    #landing {
+        background-size: 1100px;
+    }
+}
+@media screen and (max-width: 1170px) {
+    #landing {
+        height:580px;
+    }
+    #landing .a {
+        padding-top:250px;
+        font-size:3.9em;
+    }
+    #landing .b {
+        font-size:3.9em;
+        padding:15px 30px;
+    }
+    #landing .c {
+        font-size:3.9em;
+        padding:25px 30px;
+    }
+    #landing #subtitle {
+        margin-top:15px;
+        font-size:1.5em;
+    }
+}
+@media screen and (max-width: 900px) {
+    #landing {
+        height:470px;
+    }
+    #landing .a {
+        padding-top:210px;
+        font-size:3.4em;
+    }
+    #landing .b {
+        font-size:3.4em;
+        padding:10px 30px;
+    }
+    #landing .c {
+        font-size:3.4em;
+        padding:20px 30px;
+    }
+    #landing #subtitle {
+        margin-top:10px;
+        font-size:1.4em;
+    }
+}

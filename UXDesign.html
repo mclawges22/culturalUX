@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Maegan Clawges">
+
+    <title>Elements of UX Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/pages.css" rel="stylesheet">
+      
+    <!-- JQUERY -->
+    <script src="js/jquery.js"></script>  
+      
+    <!-- Custom scripts for this template -->
+    <script src="js/pages.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+      <script src="respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  <div class="nav">
+    <ul>
+      <a href="index.html">
+        <li>Introduction</li>
+      </a>
+      <a href="ConnectingDots.html">
+        <li>Connecting<br>the Dots</li>
+      </a>
+      <a href="culture.html">
+        <li>Quantifying Culture</li>
+      </a>
+      <a href="UXDesign.html">
+        <li id="current">Elements of<br>UX Design</li>
+      </a>
+      <li class="case-studies" onclick="expandCaseStudies()">Case Studies
+        <p id="caseStudyOptions">
+          <a href="McDonalds.html">McDonalds</a><br>
+          <a href="Nokia.html">Nokia</a><br>
+          <a href="Universities.html">University Sites</a>
+        </p>
+      </li>
+      <a href="conclusion.html">
+        <li>Conclusion</li>
+      </a>
+      <a href="sources.html">
+        <li>Sources</li>
+      </a>
+      
+    </ul>
+  </div>
+  <div class="mainUX">
+    <div class="intro">
+        <p id="squiggle">~</p>
+        <p class="quote"><strong>&ldquo;</strong>A user interface should be simple, natural to use and enjoyable for the user to interact with, adjustable
+            and sensitive enough to deal with cultural issues, and embedded with added values that make the user&rsquo;s experience richer and
+            more meaningful (Shen). &nbsp;<strong>&rdquo;</strong>
+        </p>
+        <p>The end goal of user experience design is maximizing usability, the basic tenets of which include learnability, efficiency,
+            and satisfaction for the user (Badre).
+        </p>
+        
+        <p>Professional analysts and designers generally agree that well-designed user interfaces improve the performance and appeal
+            of the web, helping to convert &ldquo;tourists&rdquo; or  &ldquo;browsers&rdquo; to &ldquo;residents&rdquo; or &ldquo;customers&rdquo; (Marcus). As part of their 2002 study,
+            Fogg, Soohoo, and Danielson found that 46.1% of consumers assessed credibility (relating to trustworthiness, quality, and
+            expertise) of corporate sites based on the overall visual design (Cyr). Designing for a particular culture shows those users
+            that the corporation values them as clients.
+        </p>
+    </div>
+    <div class="body">
+        <h1>Conceptual Models and Metaphors</h1>
+        <p>In <i>The Design of Everyday Things</i>, Donald Norman suggests that the ideal design allows the user to intuitively understand
+        how the product or website works without explicit instruction. This type of immediate understanding and ease of use is essential
+        for any site seeking to compete with the 3.62 billion web pages indexed by the top four search engines in October 2013
+        (<a href="http://www.worldwidewebsize.com">Worldwide Web Size</a>).</p>
+
+        <p>One way to quickly communicate instructions to the user is through a good conceptual model, which helps the user to predict
+        the effects of his or her actions. By emulating a product or design that the user is already understands and is accustomed to
+        using, the designer can create a metaphor for understanding the functionality of the new user experience. Norman suggests that
+        this deeper level of understanding enables the user to solve their own problems instead of blindly following instructions (Norman).
+        An effective metaphor should reinforce the user&rsquo;s conceptual model of how the interface should work and enhance human-computer
+        interactions.</p>
+
+        <p>However, Norman also writes that, &ldquo;each culture has a set of allowable actions for social situations.&rdquo; People
+        often feel frustrated when their intuition and cultural heritage is not accepted and they are left without conventions for
+        dealing with a new situation or product (Norman).</p>
+<img id="trash-can" src="images/trashcan.png">
+        <p>The trashcan on the desktop is a simple example of a conceptual model gone awry. &nbsp;It is meant to be a place for deleted
+        items that can be retrieved until the trash is emptied. However, in some cultures the idea of digging something out of the
+        trash seems illogical and degrading (Shen).</p>
+
+        <p id="trash-next">In their research, &ldquo;Towards Culture-Centered Design,&rdquo; Shen, Woolley and Prior looked for a conceptual model to explain
+        the layout and use of the desktop that could be adapted to a wide range of cultures. Criteria for selecting a metaphor included
+        culture richness, suitability to the tasks of the interface, pleasurability, non-technical, and adaptability
+        to different cultures and functional contexts.</p>
+        
+        <p>They concluded that a garden provided the best context for the desktop. It was
+        important to the study that both gardens and computers could be places
+        for relaxation, entertainment, creation, knowledge, communication and socializing. They found that a garden is considered to be
+        a doorway to a culture, and thus, the metaphor could be easily transferred and adapted to other cultures. Shen, Woolley, and
+        Prior suggested that the garden metaphor could intuitively teach someone who was unfamiliar with the desktop how it was meant
+        to be used. For example, the desktop of a computer requires maintenance and organization, which could be compared to caring for
+        a garden (Shen).</p>
+        <h1>Page Layout</h1>
+        <p>The organization of space on a web page is crucial to usability. American designers widely accept that the top left area of a
+        page will be looked at first and should contain important information about the product or company in addition to indicating the
+        purpose of the page to the user. However, where a person looks first is largely due to the orientation of
+        text in their culture. Del Galdo and Neilson (1996) demonstrated that the direction of the design reflects various psychological
+        and social associations in different cultures (Cyr).
+        For example, Middle Eastern sites orient text, links, and graphics from right-to-left (Badre).</p>
+        <div id="airlines">
+            <div id="delta">
+                <h2>Delta Airlines website</h2>
+                <img src="images/delta.png">
+                
+            </div>
+            <div id="mea">
+                <h2>Middle Eastern Airlines website</h2>
+                <img src="images/mea.png">
+            </div>
+            <p>The position of the title/logo is a clear indicator of the difference in layout direction between the two cultures. The most important information is placed on the top-left for Delta, an American airline, and top-right on the Middle Eastern Airlines site. Also note the alignment of body text in the forms and credits.</p>
+        </div>
+            
+        
+        <p>Layout also influences menu design, which according to Yu and Roh (2002), is essential to effective information retrieval
+        systems. Effective layout design builds a contextual and structural model to help users find the information they are looking
+        for and understand what is provided. The design is a communication bridge between the designer and the user (Cyr).</p>
+
+        <p>It is also important for interface designers to consider how the majority of users from a culture or region may access the
+        digital product or website they are designing. For example, the majority of Internet access in some countries in Africa, such
+        as Nigeria, Sudan, and Ethiopia, as well as India, is through a mobile device (StatCounter). This smaller interface requires a
+        radically different approach to the spatial organization of content.</p>
+        
+        <h1>Color Associations</h1>
+        <div class="color-associations">
+            
+                <select id="sel-country" onchange="countryColorChange(this)">
+                    <option value="default">Select a country</option>
+                    <option value="US">United States</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="France">France</option>
+                </select>
+            
+            <div class="red color"></div>
+            <div class="yellow color"></div>
+            <div class="green color"></div>
+            <div class="blue color"></div>
+            <div class="white color"></div>
+            <p class="source">Source: &nbsp;Badre.</p>
+        </div><p id="color-text">The color scheme is a major factor a user&rsquo;s comfort level and overall satisfaction with the user experience. An &ldquo;irritating&rdquo;
+        color scheme may cause the user to leave the site prematurely, before successfully completing their task. Cultures differ
+        greatly in the emotions associated with certain colors (see figure to right for example data). Simon&rsquo;s (2001) research found that Asians prefer
+        less bright colors while western cultures prefer lighter and brighter colors with more images to create a modern style (Simon).
+        </p>
+        <h1 id="icon-head">Iconography</h1>
+        <p>As web design has evolved, the use of icons has been effective in adding visual stimulation and simplicity to an interface.
+        Icons are also used as replacements for text that would otherwise need to be translated to different languages. However, the
+        translation can still be lost in an icon that may be interpreted to reference something entirely different than the designer
+        intended. For example, the Japanese are unsettled by pictorial representations of body parts in icons (Shen).</p>
+
+        
+        <img id="toiletMan" src="images/IndianToiletMan.png">
+        <p>Sometimes it makes sense to localize or &ldquo;glocalize&rdquo; established standard icons to fit local traditions and
+        values. For example, in India some have adapted the standard ISO-type man to a traditional Indian outfit with a white turban and a sarong (Shen).</p>
+        <p>Sloppy use of symbols as metaphors can cause confusion. Cultures with high uncertainty avoidance would prefer explicit
+        text to the ambiguity of icons (Marcus & Gould). However, an icon-based user interface is often highly successful with
+        Chinese users and other cultures whose language is character-based because they are used to communicating through iconography (Shen).
+        </p>
+    </div>
+  </div>
+
+</body>
+</html>

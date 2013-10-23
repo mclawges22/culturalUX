@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Maegan Clawges">
+    
+    <title>Quantifying Culture</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/pages.css" rel="stylesheet">
+      
+    <!-- JQUERY -->
+    <script src="js/jquery.js"></script>  
+      
+    <!-- Custom scripts for this template -->
+    <script src="js/pages.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+      <script src="respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  <div class="nav">
+    <ul>
+      <a href="index.html">
+        <li>Introduction</li>
+      </a>
+      <a href="ConnectingDots.html">
+        <li>Connecting<br>the Dots</li>
+      </a>
+      <a href="culture.html">
+        <li id="current">Quantifying Culture</li>
+      </a>
+      <a href="UXDesign.html">
+        <li>Elements of<br>UX Design</li>
+      </a>
+      <li class="case-studies" onclick="expandCaseStudies()">Case Studies
+        <p id="caseStudyOptions">
+          <a href="McDonalds.html">McDonalds</a><br>
+          <a href="Nokia.html">Nokia</a><br>
+          <a href="Universities.html">University Sites</a>
+        </p>
+      </li>
+      <a href="conclusion.html">
+        <li>Conclusion</li>
+      </a>
+      <a href="sources.html">
+        <li>Sources</li>
+      </a>
+    </ul>
+  </div>
+  <div class="mainCulture">
+    <div class="intro">
+        <p id="squiggle">~</p>
+        <p>Visiting a foreign website is not unlike visiting a foreign country. The visitor is surrounded by cues reminding
+            them that they are out of their comfort zone. New experiences, signs, smells, currency, language, customs and
+            geography may be exciting for an explorer, but quickly turn into a frustration when the visitor needs to accomplish
+            a complex task easily and efficiently. In Albert N. Badre&rsquo;s research in &ldquo;The Effects of Cross Cultural Interface
+            Design Orientation on World Wide Web User Performance,&rdquo; Asian respondents in particular said that if web sites were
+            designed for their language and culture, more people would be willing to use the web (Badre).
+        </p>
+        <p><strong>Culture</strong> is a complex reference to the beliefs, customs, and values of a particular society, region, or era. Drawing
+            cultural lines and grouping users by culture is a difficult and controversial process. There are no strict guidelines to
+            use to distinguish where one culture stops and another begins. For the purpose of this research, it is assumed that user
+            research has already been conducted to target the user base whose cultural needs should be considered in the user
+            experience design process. The focus of this research is on how cultures may differ from each other.
+        </p>
+        <p><strong class="subHead">How can we anticipate the aspects of a user experience that might confuse or offend international users?</strong></p>
+        <p>From 1978 to 1983 <strong>Geert Hofstede</strong> conducted interviews with hundreds of IBM employees in 53 countries. In his analysis of
+            the data he formulated his theory that &ldquo;world cultures vary along consistent, fundamental dimensions&rdquo; (Marcus). He defined
+            culture as &ldquo;the collective programming of the mind, which distinguishes the members of one group or category of people from
+            another&rdquo; (Hofstede).
+        </p>
+        <p>All people develop cultural values based on their environment and early training as children. It is difficult to classify
+        individuals by cultural norms and they should not be used as stereotypes, but instead recognized as different patterns of values
+        and thought. These patterns help answer user experience design questions such as:</p>
+        <p class="questions">How formal or rewarding should the interaction be?<br>
+            What will motivate the user to interact? Money? Honor? Achievement?<br>
+            How much conflict, disagreement or debate will people tolerate?<br>
+            Should sincerity, harmony or honesty be emphasized?<br>
+            What effect will ambiguity or uncertainty have on the user?<br>
+            Will advertisements turn off users?<br>
+            Should separate sites be made for men and women? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sources: &nbsp;Hofstede, Marcus</p>
+        
+        <h1>Hofstede&rsquo;s Dimensions of Culture</h1>
+    </div>
+    <div class="fiveDims">
+        <div class="left">
+            <p>Hofstede&rsquo;s five dimensions of culture quantify the significant differences between cultures
+                and how digital interface designs can fail or succeed in translation to the user&rsquo;s culture. Hofstede believes that
+                these deep cultural differences are hundreds or even thousands of years old and will not disappear quickly (Hofstede).
+            </p>
+            <p><strong>Choose a country to view its cultural profile:</strong>
+                <select id="sel-country" onchange="countryChange(this)">
+                    <option value="US">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Japan">Japan</option>
+                    <option value="India">India</option>
+                    <option value="Great Britain">Great Britain</option>
+                </select>
+            </p>
+            <div id="graph">
+                <h2>This will be a bar chart that dynamically changes as the user chooses one of the 40 countries listed in the selection bar.
+                It will show that country's score in each of the five dimensions form 0-100 and its rank in the list of 40 countries.</h2>
+            </div>
+        </div>
+        <div class="fiveBits">
+            <div id="pd" onclick="showPD(event)">
+                <h6>click to expand/click to minimize</h6>
+                <h2>Power Distance</h2>
+                
+                <div class="innerPD">
+                    
+                    <p><strong>High PD countries</strong> tend to focus political power on a centralized government and have tall hierarchies in
+                    companies with large differences in salary and status. The less powerful are dependent on the more powerful and
+                    children are taught strict obedience. Skills, wealth, power, and status go hand-in-hand and those in power are
+                    highly respected. &nbsp;&nbsp;<strong>Examples:</strong>  Arab countries, India, Mexico, Malaysia</p>
+
+                    <p><strong>Low PD countries</strong> support equal rights and rely on interdependence between the less and more powerful people.
+                    Privileges and status symbols are frowned upon and there is a large middle class. &nbsp;&nbsp;<strong>Examples:</strong>  Austria, Israel, New Zealand, Sweden</p>
+                    
+                    <h3>Power Distance in User Experience Design</h3>
+                    <p><strong>Access to information:</strong> High PD countries may expect that certain information will only be
+                    made available to people with powerful credentials.</p>
+                    <p><strong>Symbols</strong> emphasizing social order would be expected in high PD countries and frowned upon by low PD countries.</p>
+                    <p><strong>Images</strong> focus on leaders instead of customers or employees.</p>
+
+
+                </div>
+            </div>
+            <div id="ind" onclick="showIND(event)">
+                <h2>Individualism v. Collectivism</h2>
+                <div class="innerIND">
+                    
+                    <p><strong>Individualist cultures</strong> focus on a person&rsquo;s freedom to choose his or her own path, with
+                    little obligation to anyone else. Extrinsic motivators such as material wealth are emphasized and individual rights
+                    to privacy and diverse personal opinions are highly valued. &nbsp;&nbsp;<strong>Examples:</strong> United States,
+                    Australia, Great Britain, Canada</p>
+
+                    <p><strong>Collectivist cultures</strong> integrate individuals into strong, cohesive groups offering 
+                    protection in exchange for unquestioning loyalty. Direct confrontations are avoided. The government may
+                    regulate the economy, control the press, and emphasize harmony and consensus. &nbsp;&nbsp;<strong>Examples:</strong>
+                    Guatemala, Panama, Indonesia, Pakistan</p>
+
+                    
+                    <h3>Individualism in User Experience Design</h3>
+                    
+                    <p><strong>Personal achievement</strong> emphasized (individualism) or underplayed (collectivism).</p>
+                    <p><strong>Definition of success:</strong> Materialism/consumerism v. social-political agendas.</p>
+                    <p><strong>Language:</strong> Argumentative and tolerant of diverse opinions v. official slogans and subdued controversy.</p>
+                    <p>Willing to provide <strong>personal information</strong> v. protect data singling out an individual.</p>
+                </div>
+            </div>
+            <div id="mas" onclick="showMAS(event)">
+                <h2>Masculine v. Feminine</h2>
+                <div class="innerMAS">
+                    <p><strong>Masculine cultures</strong> are assertive and competitive. Conflicts are resolved by fighting. The government
+                    spends more money on defense and less on caring for the poor. &nbsp;&nbsp;<strong>Examples:</strong> Japan, Italy, Switzerland</p>
+
+                    <p><strong>Feminine cultures</strong> focus on the home and nurturing relationships. Gender roles have less influence
+                    in these cultures. Conflicts are resolved by compromise and negotiation.
+                    &nbsp;&nbsp;<strong>Examples:</strong> Sweden, Norway, Netherlands, Denmark</p>
+
+                    <h3>Gender Perspectives in User Experience Design</h3>
+                    <p><strong>Masculine cultures would focus on:</strong><br>
+                        Enumerated tasks and quick mastery<br>
+                        Navigation allows for exploration and control<br>
+                        Gamification and competition to engage the user<br>
+                        Utilitarian graphics and styling</p>
+
+                    <p><strong>Feminine cultures would focus on:</strong><br>
+                    Blurred gender roles<br>
+                    Cooperation and support through socializing<br>
+                    Visual aesthetics engage the user</p>
+
+                </div>
+            </div>
+            <div id="ua" onclick="showUA(event)">
+                <h2>Uncertainty Avoidance</h2>
+                <div class="innerUA">
+                    <p>In some cultures <strong>uncertain or unknown situations</strong> are threatening and unnerving. Members of these
+                    cultures are comforted by the predictability of the outcomes of their actions. These cultures emphasize formal
+                    rules and have high rates of suicide, alcoholism, and imprisonment. &nbsp;&nbsp;<strong>Examples:</strong> Greece, Portugal, Japan, France</p>
+
+                    <p>Cultures with <strong>low UA</strong> tend to more informal, less anxious, and less aggressive.
+                     &nbsp;&nbsp;<strong>Examples:</strong> Singapore, Ireland, Great Britain, United States</p>
+
+                    <h3>Considerations for User Experience Design</h3>
+                    <p><strong>High UA cultures rely on:</strong><br>
+                        Simple, clear metaphors that help reduce &ldquo;user errors&rdquo;<br>
+                        Linear navigation model makes it obvious what will happen next<br>
+                        Redundant cues to reduce ambiguity</p>
+
+                    <p><strong>Low UA cultures would prefer:</strong><br>
+                        Complexity with many choices<br>
+                        A more exploratory interface / less control of navigation<br>
+                        Less redundancy - color and iconography maximize information</p>
+
+                </div>
+            </div>
+            <div id="ltst" onclick="showLTST(event)">
+                <h2>Long-Term v. Short-term Orientation</h2>
+                <div class="innerLTST">
+                    
+                    <p>Asian countries influenced by Confucian philosophies for thousands of years tend to believe that a
+                    stable society requires unequal social structures. The family is the prototype for the hierarchy of power;
+                    older people have more wisdom and authority than younger people (men more than women). These cultures emphasize
+                    acquiring skills, working hard, and being frugal, patient, and persevering.
+                     &nbsp;&nbsp;<strong>Examples:</strong> China, Japan</p>
+
+                    <p>Western cultures promote equality, creativity, and self-actualization. People seek for the truth instead
+                    of virtue (decided by society). &nbsp;&nbsp;<strong>Examples:</strong> Pakistan, United States</p>
+                    
+                    <h3>Time Orientation in User Experience Design</h3>
+                    <p><strong>Long-term cultures would focus on:</strong><br>
+                        Practical content<br>
+                        Relationships are sources of information and credibility<br>
+                        Patience in achieving results and goals</p>
+
+                    <p><strong>Short-term cultures would focus on:</strong><br>
+                        Content based on truth, rules are the source of credibility<br>
+                        Immediate satisfaction and completion of goals</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+
+
+</body>
+</html>

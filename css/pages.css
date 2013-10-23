@@ -1,0 +1,477 @@
+/***Main CSS for a research study on culture-centered User Experience design
+ ***     By Maegan Clawges     ***
+ ***     I am open to advice and help resolving open issues, but please do not replicate on your own public web domain ***/
+
+@font-face{
+	font-family:Myriad-Pro-Light;
+	src:url('../fonts/MyriadPro-Light.otf');
+}
+@font-face{
+	font-family:Myriad-Pro;
+	src:url('../fonts/MyriadPro-Regular.otf');
+}
+@font-face{
+	font-family:Myriad-Pro-Bold;
+	src:url('../fonts/MyriadPro-Bold.otf');
+}
+
+
+html, body, h1, h2, h3, h4, h5, h6, p, border{
+    margin:0;
+    padding:0;
+}
+
+html{
+    background-color:#000;
+}
+
+body{
+    height:100%;
+    width: 100%;
+    font-family:Myriad-Pro, Arial, sans-serif;
+    font-size:14px;
+    color:#919191;
+    line-height:25px;
+    background-color:#000;
+}
+a:link {
+    text-decoration: none;
+    color:#818181;
+    
+}
+a:visited {
+    text-decoration: none;
+    color:#818181;  
+}
+.nav{
+	height:84px;
+}
+h1 {
+	font-family:Myriad-Pro, Arial, sans-serif;
+	font-size:3em;
+	text-align: center;
+	margin:50px 0 15px 0;
+	color:#bbb;
+	
+}
+.mainCulture {
+	background-color:#000;
+	padding:30px 0;
+	height:800px;
+	margin:0;
+}
+.mainConnectingDots {
+	background-color:#000;
+	padding:60px 0;
+	height:800px;
+	margin:0;
+}
+.mainUX {
+	background-color:#000;
+	padding:30px 0;
+	height:800px;
+	margin:0;
+}
+.mainUX .intro p {
+	width:47%;
+}
+.mainUX .intro .quote {
+	width:25%;
+	float:right;
+	padding:10px 7% 20px 5%;
+	font-size:1.35em;
+	line-height:1.5em;
+	color:#ffc990;
+	opacity:.8;
+}
+.mainUX .quote strong {
+	font-size:1.5em;
+}
+
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+   
+}
+ul li {
+    text-align: center;
+    width:11%;
+    padding:20px 1.6% 15px 1.6%;
+    border-left:1px solid #818181;
+    font-size:1.6em;
+    float:left;
+    color:#818181;
+}
+ul a:nth-child(1) li, ul a:nth-child(6) li, ul a:nth-child(7) li, .case-studies {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.case-studies {
+	cursor: pointer;
+}
+ul a:first-child li {
+	border-left:none;
+}
+  
+ul a:last-child li {
+    border-left:1px solid #818181;
+}
+ul li:hover {
+    background-color:#ffc990;
+    color:#000;
+    border:none;
+    opacity:.8;
+}
+ul #current {
+    background-color:#ffc990;
+    color:#000;
+}
+
+#caseStudyOptions {
+	color:#818181;
+	margin-top:5px;
+	font-size:.8em;
+}
+#caseStudyOptions a:hover {
+	color:#000;
+}
+
+/*** Connecting the Dots *****/
+#dataVis {
+	float:left;
+	width:53%;
+	height:100%;
+	margin:0 5%;
+}
+#sidebar {
+	float:left;
+	width:37%;
+	height:100%;
+	margin:0;
+}
+#sidebar h3 {
+	padding:4% 7% 3% 6%;
+	background-color:#ffc990;
+	font-size:1.5em;
+	line-height:1.3em;
+	color:#000;
+	font-family:Myriad-Pro-Light, Arial, sans-serif;
+	
+}
+#sidebar p {
+	margin-right:10%;
+	padding:10px 7% 3% 6%;
+	font-size: 1.2em;
+}
+#sidebar p:nth-child(2) {
+	margin-top:4%;
+}
+p strong {
+	font-family:Myriad-Pro-Bold, Arial, sans-serif;
+	padding:0 3px;
+	font-size:1.05em;
+	font-weight:300;
+}
+
+/******Quantifying Culture******/
+
+.intro p, .body p {
+	padding:10px 14%;
+	font-size: 1.13em;
+}
+.intro #squiggle, .mainUX #squiggle {
+	font-size:5em;
+	color:#ffc990;
+	text-align: center;
+	width:50px;
+	margin:auto;
+}
+.intro p .subHead {
+	font-size:1.2em;
+	padding:0;
+	color:#aaa
+}
+.intro .questions {
+	padding-left:20%;
+	color:#aaa;
+}
+.fiveDims {
+	margin:0 5%;
+	height:900px
+}
+
+.fiveDims p strong {
+	padding:0;
+}
+
+.fiveDims .fiveBits {
+	width:50%;
+	margin-left:1%;
+	margin-top:50px;
+	float:left;
+	color:#000;
+	cursor: pointer;
+}
+.fiveDims .fiveBits #pd h6{
+	position:relative;
+	top:0;
+	left:65%;
+	width:200px;
+	font-size:.85em;
+	font-weight:normal;
+}
+.fiveDims .fiveBits h2 {
+	font-size:1.7em;
+	font-weight:900;
+}
+.fiveDims .fiveBits h3 {
+	margin:20px 0 10px 0;
+	text-align: center;
+	font-size:1.5em;
+}
+
+.fiveBits #pd{
+	background-color: #FF3735;
+	padding:0 4% 4% 4%;
+	padding-left:5%;
+	opacity:.8;
+}
+
+.fiveBits #pd .innerPD p:nth-child(1), .fiveBits #pd .innerPD p:nth-child(2) {
+	margin-top:15px;
+}
+.fiveBits #ind{
+	background-color: #FFC100;
+	padding:4%;
+	padding-left:5%;
+	opacity:.9;
+}
+.fiveBits #ind .innerIND p:nth-child(1), .fiveBits #ind .innerIND p:nth-child(2) {
+	margin-top:15px;
+}
+.fiveBits #mas{
+	background-color: #00A13B;
+	padding:4%;
+	padding-left:5%;
+	padding-top:5%;
+	opacity:.8;
+}
+.fiveBits #mas .innerMAS p:nth-child(1), .fiveBits #mas .innerMAS p:nth-child(2), .fiveBits #mas .innerMAS p:nth-child(5) {
+	margin-top:15px;
+}
+.fiveBits #ua{
+	background-color: #2175ED;
+	padding:4%;
+	padding-left:5%;
+	opacity:.8;
+}
+.fiveBits #ua .innerUA p:nth-child(1), .fiveBits #ua .innerUA p:nth-child(2), .fiveBits #ua .innerUA p:nth-child(5) {
+	margin-top:15px;
+}
+.fiveBits #ltst{
+	background-color: #814BD1;
+	padding:4%;
+	padding-left:5%;
+	opacity:.9;
+}
+.fiveBits #ltst .innerLTST p:nth-child(1), .fiveBits #ltst .innerLTST p:nth-child(2), .fiveBits #ltst .innerLTST p:nth-child(5) {
+	margin-top:15px;
+}
+
+.fiveDims .left {
+	width:40%;
+	margin:50px 5% 50px 2%;
+	height:300px;
+	float:left;
+}
+.fiveDims .left p:nth-child(2) {
+	color:#aaa;
+	margin:50px 0;
+	text-align: center;
+}
+.fiveDims p {
+	font-size:1.2em;
+}
+#sel-country {
+	margin:10px 35%;
+	width:30%;
+}
+#graph {
+	width:100%;
+	height:400px;
+	background-color:#ddd;
+	margin-bottom:50px;
+}
+#graph h2 {
+	padding:7%;
+}
+
+
+/******UXDesign*****/
+
+.body #trash-can {
+	float:left;
+	margin-right:4%;
+	margin-left:20%;
+	margin-bottom:10px;
+	width:85px;
+}
+.body #trash-next {
+	padding-top:20px;
+}
+.body #airlines {
+	margin-top:20px;
+}
+.body #delta {
+	margin-left:22%;
+	float:left;
+	
+	margin-right:5%;
+	
+}
+.body #delta h2, .body #mea h2 {
+	text-align: center;
+	color:#ccc;
+	margin-bottom:10px;
+	
+}
+.body #delta img, .body #mea img {
+	height:350px;
+	margin-bottom:10px;
+}
+.body #mea {
+	float:left;
+	margin-right:12%;
+}
+.body #airlines p {
+	width:58%;
+	margin: 0 8%;
+	font-size:1.05em;
+	color:#ccc;
+	font-style: italic;
+	line-height:1.5em;	
+}
+.body #color-text {
+	width:40%;
+	margin-top:30px;
+}
+.body .color-associations {
+	width:38%;
+	float:right;
+	margin-right:8%;
+}
+.body .color-associations p {
+	color:#aaa;
+}
+.body .color-associations .source{
+	text-align: right;
+	margin-right:7%;
+	font-size: .95em;
+}
+.body .color-associations #sel-country {
+	width:40%;
+	margin:20px 30%;
+}
+.body .color {
+	height:40px;
+	width:55%;
+	margin:auto;
+	
+}
+.body .color p {
+	color:#000;
+	font-size:1.3em;
+	padding:5% 4% 5% 4%;
+	
+}
+.red {
+	background-color: #FF3735;
+	
+	padding-left:5%;
+	opacity:.8;
+}
+.yellow {
+	background-color: #FFC100;
+	
+	padding-left:5%;
+	opacity:.9;
+}
+.green {
+	background-color: #00A13B;
+	
+	padding-left:5%;
+	opacity:.8;
+}
+.blue {
+	background-color: #2175ED;
+	
+	padding-left:5%;
+	opacity:.8;
+}
+.white {
+	background-color: #fff;
+	
+	padding-left:5%;
+	opacity:.8;
+}
+#icon-head {
+	margin-top:90px;
+}
+#toiletMan {
+	margin:20px 5% 10px 20%;
+	width:25%;
+	float:left;
+}
+.works-cited h1 {
+	color:#ffc990;
+}
+.works-cited #images {
+	float:right;
+	width:30%;
+	margin-left:5%;
+	margin-top:20px;
+}
+.works-cited #images h2 {
+	padding:5%;
+	background-color:#ffc990;
+	padding:10px 30% 10px 8%;
+	color:#000;
+	opacity:.9;
+	font-size:1.5em;
+}
+.works-cited #images p {
+	padding:5px 8%;
+	font-size:1.15em;
+	margin:0;
+	font-family:Arial, sans-serif;
+}
+.works-cited #images p:nth-child(2) {
+	margin-top:20px;
+}
+.works-cited p {
+	line-height:1.8em;
+	margin:30px 20% 30px 16%;
+	font-size:1.15em;
+	padding:10px 0;
+	font-family:Arial, sans-serif;
+}
+.hangingindent {
+    padding-left: 30px ;
+    text-indent: -30px ;
+}
+@media screen and (max-width: 1054px) {
+	.fiveDims {
+		margin:0 2%;
+	}
+	.case-studies {
+		padding:20px 1.6% 15px 1.6%;
+	}
+	.body #mea img, .body #delta img {
+		height:270px;
+	}
+	body .color p{
+		padding:5% 2% 5% 2%;
+	}
+}
